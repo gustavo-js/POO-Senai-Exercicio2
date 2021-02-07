@@ -64,21 +64,21 @@ public class Main {
                 doisBeneficiariosMaiorTempo.add(pessoa);
             } else{
                 if(doisBeneficiariosMaiorValor.get(0).getValorBeneficio() >= doisBeneficiariosMaiorValor.get(1).getValorBeneficio()){
-                    if(valorBeneficio > doisBeneficiariosMaiorValor.get(0).getValorBeneficio()){
-                        doisBeneficiariosMaiorValor.set(0, pessoa);
-                    }
-                } else{
                     if(valorBeneficio > doisBeneficiariosMaiorValor.get(1).getValorBeneficio()){
                         doisBeneficiariosMaiorValor.set(1, pessoa);
                     }
+                } else{
+                    if(valorBeneficio > doisBeneficiariosMaiorValor.get(0).getValorBeneficio()){
+                        doisBeneficiariosMaiorValor.set(0, pessoa);
+                    }
                 }
                 if(doisBeneficiariosMaiorTempo.get(0).getTempoBeneficio() >= doisBeneficiariosMaiorTempo.get(1).getTempoBeneficio()){
-                    if(mesesBeneficio > doisBeneficiariosMaiorTempo.get(0).getTempoBeneficio()){
-                        doisBeneficiariosMaiorTempo.set(0, pessoa);
-                    }
-                } else{
                     if(mesesBeneficio > doisBeneficiariosMaiorTempo.get(1).getTempoBeneficio()){
                         doisBeneficiariosMaiorTempo.set(1, pessoa);
+                    }
+                } else{
+                    if(mesesBeneficio > doisBeneficiariosMaiorTempo.get(0).getTempoBeneficio()){
+                        doisBeneficiariosMaiorTempo.set(0, pessoa);
                     }
                 }
             }
